@@ -200,15 +200,15 @@ This system is a **prototype** intended for research, demonstration, and learnin
 ```bash
 woman-safety-ai/
 │
-├── [main.py](http://main.py/)                        # Entry point: Captures feed, runs detection pipeline
-├── [alert.py](http://alert.py/)                       # Sends SMS/WhatsApp alerts via Twilio
+├── main.py                        # Entry point: Captures feed, runs detection pipeline
+├── alert.py                     # Sends SMS/WhatsApp alerts via Twilio
 ├── pose_detector.py              # Handles pose detection (MediaPipe/OpenPose logic)
 ├── object_detector.py           # YOLOv8 person and object detection logic
-├── voice_detector.py            # (Optional) Voice keyword detection module
-├── [dashboard.py](http://dashboard.py/)                  # Streamlit dashboard for real-time monitoring
+├── voice_detector.py            # Voice keyword detection module
+├── dashboard.py                # Streamlit dashboard for real-time monitoring
 │
 ├── utils/
-│   ├── [helpers.py](http://helpers.py/)                # Utility functions (e.g., bounding box drawing, thresholding)
+│   ├── helpers.py              # Utility functions (e.g., bounding box drawing, thresholding)
 │   └── gps_utils.py              # Optional GPS fetching module
 │
 ├── config/
@@ -220,10 +220,10 @@ woman-safety-ai/
 │   └── datasets/                 # (Optional) Datasets for training/fine-tuning
 │
 ├── models/
-│   ├── [yolov8n.pt](http://yolov8n.pt/)                # YOLOv8 weights
+│   ├── yolov8n.pt               # YOLOv8 weights
 │   └── custom_pose_model.pth     # Custom pose model (if trained)
 │
 ├── requirements.txt              # List of Python dependencies
-├── [README.md](http://readme.md/)                     # Project overview and setup instructions
+├── README.md                  # Project overview and setup instructions
 └── LICENSE                       # License information (MIT, Apache, etc.)
 ```
