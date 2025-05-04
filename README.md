@@ -197,12 +197,6 @@ This system is a **prototype** intended for research, demonstration, and learnin
 
 ---
 
-## 📜 License
-
-MIT License © 2025 [Your Name]
-
----
-
 ```bash
 woman-safety-ai/
 │
