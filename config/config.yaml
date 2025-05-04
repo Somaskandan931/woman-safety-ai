@@ -1,0 +1,31 @@
+models:
+  yolo_path: models/yolov8n.pt
+
+thresholds:
+  object_detection: 0.5
+  pose_detection: 0.6
+  pose_tracking: 0.6
+  voice_detection: 0.7
+
+keywords:
+  emergency:
+    - help
+    - save me
+    - emergency
+
+camera:
+  id: 0
+
+alert:
+  cooldown_seconds: 10
+
+twilio:
+  enabled: true
+  alert_message: "🚨 Suspicious activity detected! Please check the dashboard or respond immediately."
+
+logging:
+  save_snapshots: true
+  snapshot_dir: data/snapshots/
+
+gps:
+  enabled: false
